@@ -30,11 +30,11 @@ By separating facts from dimensions, this design enables faster, cleaner, and sc
 
 ### Step 2: Data Cleaning (Reality of Real Data)
 Before generating insights, the data had to be trusted:
-1) Removed cancelled invoices (InvoiceNo LIKE 'C%')
-2)Removed NULL customers
-3)Standardized country and product values
-4)Created DateKey in YYYYMMDD format
-5)Calculated TotalAmount = Quantity × UnitPrice
+- Removed cancelled invoices (InvoiceNo LIKE 'C%')
+- Removed NULL customers
+- Standardized country and product values
+- Created DateKey in YYYYMMDD format
+- Calculated TotalAmount = Quantity × UnitPrice
 After cleaning, data flowed from:
 **Staging → Dimension Tables → Fact Table**
 This simulates a real-world ETL process.
@@ -60,10 +60,10 @@ Key Insights Discovered
 
 ## Business Impact
 This project demonstrates that:
-1)Raw transactional data can be transformed into strategic insights
-2)A well-designed data warehouse improves scalability and performance
-3)SQL alone can power strong business intelligence
-4)Indexing plays a crucial role in query optimization
+- Raw transactional data can be transformed into strategic insights
+- A well-designed data warehouse improves scalability and performance
+- SQL alone can power strong business intelligence
+- Indexing plays a crucial role in query optimization
 The architecture is production-ready and can integrate with:
 Power BI,Tableau
 
