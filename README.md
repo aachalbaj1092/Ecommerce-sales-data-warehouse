@@ -26,6 +26,7 @@ Instead of analyzing raw transactional data directly, I designed a Star Schema:
 DimCountry — FactSales — DimProduct
                  |
               DimDate
+              
 By separating facts from dimensions, this design enables faster, cleaner, and scalable analytics.
 
 ### Step 2: Data Cleaning (Reality of Real Data)
