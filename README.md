@@ -21,11 +21,11 @@ Instead of analyzing raw transactional data directly, I designed a Star Schema:
 **DimCountry** → Geographic segmentation
 **DimDate** → Time-based analysis
 
-            DimCustomer
-                 |
-DimCountry — FactSales — DimProduct
-                 |
-              DimDate
+                 DimCustomer
+                      |
+DimCountry —— FactSales —— DimProduct
+                      |
+                   DimDate
               
 By separating facts from dimensions, this design enables faster, cleaner, and scalable analytics.
 
